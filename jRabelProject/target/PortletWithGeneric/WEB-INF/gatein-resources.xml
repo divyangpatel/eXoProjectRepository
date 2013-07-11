@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<gatein-resources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://www.gatein.org/xml/ns/gatein_resources_1_3 http://www.gatein.org/xml/ns/gatein_resources_1_3"
+    xmlns="http://www.gatein.org/xml/ns/gatein_resources_1_3">
+ <portlet-skin>
+    <application-name>PortletWithGeneric</application-name>
+    <portlet-name>PortletWithGeneric</portlet-name>
+     <skin-name>DefaultStyle</skin-name>
+    <css-path>/css/main.css</css-path>
+    <!-- <css-priority>1</css-priority> -->
+  </portlet-skin>
+  <portlet-skin>
+    <application-name>PortletWithGeneric</application-name>
+    <portlet-name>PortletWithGeneric</portlet-name>
+     <skin-name>jQuerycssStyle</skin-name>
+    <css-path>/css/jquery-ui.css</css-path>
+    <!-- <css-priority>1</css-priority> -->
+  </portlet-skin>
+  <module>
+<name>jquery-1.9.1</name>
+<script>
+<path>/js/jquery-1.9.1.js</path>
+</script>
+</module>
+<!-- <portlet>
+  <name>PortletWithGeneric</name>
+  <module>
+  <name>webapp</name>
+    <scripts>
+    <name>webapp</name>
+      <script>
+       <path>/js/jquery-1.9.1.js</path>
+      </script>
+      <script>
+      <path>/js/jquery-ui.js</path>
+      </script>
+      <script> 
+        <path>/js/jquery-widgets.js</path>
+      </script> 
+      <script> 
+         <path>/js/jquery.js</path>
+      </script>
+      <script>
+          <path>/js/jquery.validate.js</path>
+       </script>
+       <script>    
+       <path>/js/main.js</path>
+       </script>
+    </scripts>
+   <depends>
+      <module>core</module>
+    </depends>
+  </module>
+</portlet> -->
+ <!--  <portlet>
+        <name>runningiPortlet</name>
+        <module>
+            <script>
+                <path>../resources/js/jquery-1.8.0.min.js</path>
+            </script>
+            <depends>
+                <module>jquery</module>
+                <as>$</as>
+            </depends>
+            <script>
+                 <path>/resources/js/main.js</path>
+            </script>
+        </module>
+    </portlet> -->
+</gatein-resources>

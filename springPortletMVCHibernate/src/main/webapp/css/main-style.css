@@ -1,0 +1,93 @@
+.divValidationStyle
+{
+	background-color: yellow; 
+	border: 1px dashed black; 
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 275px;
+	width: 50%;
+}
+.divformStyle
+{
+	text-align: center;
+}
+.spanEmailHeader
+{
+	margin-left: 21px;
+	text-align: center;
+}
+.spanEmailtext
+{
+   margin-left: 6px;
+}
+.spanAddressHeader
+{
+	margin-left: 5px; 
+	text-align: left;
+}
+.spanAddresstextarea
+{
+	margin-left: 8px;
+}
+.spanheadergender
+{
+	margin-left: 395px;
+    float: left;
+}
+.spaninputgenderstyle
+{
+	margin-left: 17px;
+}
+.inputmalestyle
+{
+	margin-top: -2px;
+    margin-left: -328px;
+}
+.inputfemalestyle
+{
+	margin-top: -2px;
+}
+.spanPhoneNoHeader
+{
+	margin-left: 4px;
+}
+.spaninputstyle
+{
+	margin-left: 3px;
+}
+.suubmitbuttonstyle
+{
+	width: 75px;
+	margin-left: 50px;
+}
+.resetbuttonstyle
+{
+	width:75px;
+}
+.cancelbuttonstyle
+{
+	width:75px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

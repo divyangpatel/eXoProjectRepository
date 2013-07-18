@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.exo</groupId>
+	<artifactId>jRabelProject</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<name>jRabelProject</name>
+	<description>This is the demo project</description>
+	<dependencies>
+		<!-- <dependency> <groupId>portlet-api</groupId> <artifactId>portlet-api</artifactId> 
+			<version>1.0</version> <scope>provided</scope> </dependency> -->
+		<dependency>
+			<groupId>javax.portlet</groupId>
+			<artifactId>portlet-api</artifactId>
+			<version>2.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.1</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.portals.pluto</groupId>
+			<artifactId>pluto-taglib</artifactId>
+			<version>2.0.2</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>taglibs</groupId>
+			<artifactId>standard</artifactId>
+			<version>1.0.4</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+	<build>
+
+		<defaultGoal>package</defaultGoal>
+		<finalName>PortletWithGeneric</finalName>
+		<sourceDirectory>src/main/java</sourceDirectory>
+		<!-- <resources> <resource> <directory>src/main/resources</directory> <targetPath>META-INF</targetPath> 
+			<includes> <include>tags/**</include> </includes> </resource> <resource> 
+			<directory>src/main/resources</directory> <filtering>false</filtering> <targetPath>../${project.artifactId}/WEB-INF</targetPath> 
+			<includes> <include>faces-config.xml</include> </includes> </resource> </resources> -->
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<outputDirectory>E:\projects\AgileInnovationToolkit\platform-community-4.0.0\webapps</outputDirectory>
+				</configuration>
+
+			</plugin>
+		</plugins>
+
+		<!-- <pluginManagement> <plugins> <plugin> <groupId>org.apache.maven.plugins</groupId> 
+			<artifactId>maven-war-plugin</artifactId> <configuration> Don't include libraries 
+			into Web Archives <packagingExcludes>WEB-INF/lib/*.jar</packagingExcludes> 
+			</configuration> </plugin> </plugins> </pluginManagement> -->
+	</build>
+</project>
